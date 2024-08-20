@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.todoContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+  padding: 50px;
+}
+
+.filterTodo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: bisque;
+  width: 100%;
+  padding: 7px;
+}
+
+.filterTodoItem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.todoItemContainer{
+  display: flex;
+  flex-direction: column;
+  
+  gap: 20px;
+
+}
+.todoItem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(189, 168, 209);
+  padding: 7px;
+  width: 100%;
+  
+}
+
+.todoItem button{
+  padding: 7px 5px;
+}
