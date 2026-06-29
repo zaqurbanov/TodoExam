@@ -1,24 +1,16 @@
 import React from 'react'
 
-const FilterTodo = ({handleSelectFilter}) => {
+const FilterTodo = ({ handleSelectFilter }) => {
   return (
-    <div className='filterTodo'>
-        <div className='filterTodoItem'>
-            <label htmlFor="all" >All</label>
-            <input type="radio" id='all' name='todoFilter' value={'all'}  onChange={(e)=>handleSelectFilter(e)} />
-        </div>
-        <div className='filterTodoItem'>
-            <label htmlFor="completed" >Completed</label>
-            <input type="radio" id='completed' name='todoFilter' 
-            value={'completed'}
-            onChange={(e)=>handleSelectFilter(e)}/>
-        </div>
-        <div className='filterTodoItem'>
-            <label htmlFor="uncompleted"  >Uncompleted</label>
-            <input type="radio" id='uncompleted' name='todoFilter' 
-            value={'uncompleted'}
-            onChange={(e)=>handleSelectFilter(e)}/>
-        </div>
+    <div className="filter-row">
+      <input type="radio" id="all" name="todoFilter" value="all" defaultChecked onChange={handleSelectFilter} />
+      <label className="filter-label" htmlFor="all">All</label>
+
+      <input type="radio" id="completed" name="todoFilter" value="completed" onChange={handleSelectFilter} />
+      <label className="filter-label" htmlFor="completed">Completed</label>
+
+      <input type="radio" id="uncomplated" name="todoFilter" value="uncomplated" onChange={handleSelectFilter} />
+      <label className="filter-label" htmlFor="uncomplated">Uncompleted</label>
     </div>
   )
 }
